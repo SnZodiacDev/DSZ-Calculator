@@ -10,11 +10,11 @@ public class Main {
     }
 
     public double multiplication(double a, double b) {
-
+         return a * b;
     }
 
-    public int division(int a, int b) {
-
+    public double division(double a, double b) {
+         return a / b;
     }
     public static void main(String[] args) {
 
