@@ -1,15 +1,15 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public int addition(int a, int b) {
-
+    public double addition(double a, double b) {
+        return a + b;
     }
 
-    public int subtraction(int a, int b) {
-
+    public double subtraction(double a, double b) {
+        return a - b;
     }
 
-    public int multiplication(int a, int b) {
+    public double multiplication(double a, double b) {
 
     }
 
