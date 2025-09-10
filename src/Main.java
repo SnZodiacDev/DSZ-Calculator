@@ -33,19 +33,19 @@ public class Main {
             if(input == 4) {
                 double a_ = scanner.nextDouble();
                 double b_ = scanner.nextDouble();
-                System.out.println(functions.division(a_, b_));
+                System.out.println(a_ + " / " + b_ + " = " + functions.division(a_, b_));
             } else if (input == 3) {
                 double a_ = scanner.nextDouble();
                 double b_ = scanner.nextDouble();
-                System.out.println(functions.multiplication(a_, b_));
+                System.out.println(a_ + " * " + b_ + " = " + functions.multiplication(a_, b_));
             } else if (input == 2) {
                 double a_ = scanner.nextDouble();
                 double b_ = scanner.nextDouble();
-                System.out.println(functions.subtraction(a_, b_));
+                System.out.println(a_ + " - " + b_ + " = " + functions.subtraction(a_, b_));
             } else {
                 double a_ = scanner.nextDouble();
                 double b_ = scanner.nextDouble();
-                System.out.println(functions.addition(a_, b_));
+                System.out.println(a_ + " + " + b_ + " = " + functions.addition(a_, b_));
             }
         }
 }
