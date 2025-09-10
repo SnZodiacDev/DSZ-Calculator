@@ -21,7 +21,15 @@ public class Main {
             Main functions = new Main();
             Scanner scanner = new Scanner(System.in);
 
+            System.out.println("Welcome");
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+
+            System.out.print("Enter a function: ");
             int input = scanner.nextInt();
+
             if(input == 4) {
                 double a_ = scanner.nextDouble();
                 double b_ = scanner.nextDouble();
