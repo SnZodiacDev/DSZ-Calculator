@@ -1,21 +1,42 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
-    public int addition(int a, int b) {
+    public double addition(double a, double b) { // number 1
+        return a + b;
     }
 
-    public int subtraction(int a, int b) {
-
+    public double subtraction(double a, double b) { // number 2
+        return a - b;
     }
 
-    public double multiplication(double a, double b) {
+    public double multiplication(double a, double b) { // number 3
          return a * b;
     }
 
-    public double division(double a, double b) {
+    public double division(double a, double b) { // number 4
          return a / b;
     }
     public static void main(String[] args) {
+            Main functions = new Main();
+            Scanner scanner = new Scanner(System.in);
 
+            int input = scanner.nextInt();
+            if(input == 4) {
+                double a_ = scanner.nextDouble();
+                double b_ = scanner.nextDouble();
+                System.out.println(functions.division(a_, b_));
+            } else if (input == 3) {
+                double a_ = scanner.nextDouble();
+                double b_ = scanner.nextDouble();
+                System.out.println(functions.multiplication(a_, b_));
+            } else if (input == 2) {
+                double a_ = scanner.nextDouble();
+                double b_ = scanner.nextDouble();
+                System.out.println(functions.subtraction(a_, b_));
+            } else {
+                double a_ = scanner.nextDouble();
+                double b_ = scanner.nextDouble();
+                System.out.println(functions.addition(a_, b_));
+            }
         }
 }
