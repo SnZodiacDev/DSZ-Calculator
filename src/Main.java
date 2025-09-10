@@ -1,19 +1,19 @@
-import java.util.Scanner;
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public double addition(double a, double b) { // number 1
+    public double addition(double a, double b) {
         return a + b;
     }
 
-    public double subtraction(double a, double b) { // number 2
+    public double subtraction(double a, double b) {
         return a - b;
     }
 
-    public double multiplication(double a, double b) { // number 3
+    public double multiplication(double a, double b) {
          return a * b;
     }
 
-    public double division(double a, double b) { // number 4
+    public double division(double a, double b) {
          return a / b;
     }
     public static void main(String[] args) {
