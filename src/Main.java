@@ -43,11 +43,15 @@ public class Main {
                 double b_ = scanner.nextDouble();
                 System.out.println(a_ + " * " + b_ + " = " + functions.multiplication(a_, b_));
             } else if (input == 2) {
+                System.out.println("Please enter the first number: ");
                 double a_ = scanner.nextDouble();
+                System.out.println("Please enter the second number: ");
                 double b_ = scanner.nextDouble();
                 System.out.println(a_ + " - " + b_ + " = " + functions.subtraction(a_, b_));
             } else {
+                System.out.println("Please enter the first number:");
                 double a_ = scanner.nextDouble();
+                System.out.println("Please enter the second number: ");
                 double b_ = scanner.nextDouble();
                 System.out.println(a_ + " + " + b_ + " = " + functions.addition(a_, b_));
             }
