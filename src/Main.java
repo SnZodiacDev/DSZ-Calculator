@@ -17,6 +17,11 @@ public class Main {
     public double division(double a, double b) { //This is the method for dividing numbers in thr calculator.
          return a / b;
     }
+
+    public double squareRoot(double a) { // This is the method for square root in the calculator.
+        return Math.sqrt(a);
+    }
+
     public static void main(String[] args) {
         //Variables that are used in the program.
         Main functions = new Main();
