@@ -25,6 +25,10 @@ public class Main {
     public double exponent(double a, double b){ // This is the method for putting an exponent on a number in the calculator.
         return Math.pow(a,b);
     }
+    public double nthRoot(double a, double b) {
+        double nth = 1.0 / b;
+        return Math.pow(a, nth);
+    }
 
     public static void main(String[] args) {
         //Variables that are used in the program.
@@ -41,11 +45,18 @@ public class Main {
             System.out.println("4. Division");
             System.out.println("5. Exponents");
             System.out.println("6. Square Root");
+            System.out.println("7. Nth Root");
             // The scanner to allow the users to select the function they want to utilize
             System.out.print("Enter a function: ");
             int input = scanner.nextInt();
 
-            if (input == 6) {
+            if (input == 7) {
+                System.out.println("Please enter the first number:");
+                double a_ = scanner.nextDouble();
+                System.out.println("Please enter the second number:");
+                double b_ = scanner.nextDouble();
+                System.out.println(a_ + " √ " + b_ + " = " + functions.nthRoot(a_, b_));
+            } else if (input == 6) {
                 System.out.println("Please enter the number:");
                 double a_ = scanner.nextDouble();
                 System.out.println(" √ " + a_ +  " = " + functions.squareRoot(a_));
