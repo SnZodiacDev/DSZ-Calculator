@@ -31,11 +31,15 @@ public class Main {
             int input = scanner.nextInt();
 
             if(input == 4) {
+                System.out.println("Please enter the first number:");
                 double a_ = scanner.nextDouble();
+                System.out.println("Please enter the second number:");
                 double b_ = scanner.nextDouble();
                 System.out.println(a_ + " / " + b_ + " = " + functions.division(a_, b_));
             } else if (input == 3) {
+                System.out.println("Please enter the first number:");
                 double a_ = scanner.nextDouble();
+                System.out.println("Please enter the second number:");
                 double b_ = scanner.nextDouble();
                 System.out.println(a_ + " * " + b_ + " = " + functions.multiplication(a_, b_));
             } else if (input == 2) {
