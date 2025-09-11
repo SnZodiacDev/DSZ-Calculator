@@ -2,20 +2,24 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public double addition(double a, double b) { //This is the method for adding numbers in the calculator.
+    public double addition(double a, double b) { //This is the method for adding numbers in thr calculator.
         return a + b;
     }
 
-    public double subtraction(double a, double b) { //This is the method for subtracting numbers in the calculator.
+    public double subtraction(double a, double b) { //This is the method for subtracting numbers in thr calculator.
         return a - b;
     }
 
-    public double multiplication(double a, double b) { //This is the method for multiplying numbers in the calculator.
+    public double multiplication(double a, double b) { //This is the method for multiplying numbers in thr calculator.
          return a * b;
     }
 
-    public double division(double a, double b) { //This is the method for dividing numbers in the calculator.
+    public double division(double a, double b) { //This is the method for dividing numbers in thr calculator.
          return a / b;
+    }
+
+    public double squareRoot(double a) { // This is the method for square root in the calculator.
+        return Math.sqrt(a);
     }
 
     public double exponent(double a, double b){ // This is the method for putting an exponent on a number in the calculator.
@@ -40,7 +44,7 @@ public class Main {
             int input = scanner.nextInt();
 
             if (input == 4) { // 4 selects the Division function
-                System.out.println("Please enter the first number:");
+                System.out.println("Please enter the first number:"); // These ask for the 1st variable
                 double a_ = scanner.nextDouble();
                 System.out.println("Please enter the second number:");
                 double b_ = scanner.nextDouble();
