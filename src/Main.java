@@ -17,6 +17,7 @@ public class Main {
     public double division(double a, double b) {
          return a / b;
     }
+
     public static void main(String[] args) {
         Main functions = new Main();
         Scanner scanner = new Scanner(System.in);
@@ -32,30 +33,30 @@ public class Main {
             System.out.print("Enter a function: ");
             int input = scanner.nextInt();
 
-            if (input == 4) {
+            if (input == 4) { // 4 selects the Division function
+                System.out.println("Please enter the first number:"); // These ask for the 1st variable
+                double a_ = scanner.nextDouble();
+                System.out.println("Please enter the second number:"); // These ask for the 2nd variable
+                double b_ = scanner.nextDouble();
+                System.out.println(a_ + " / " + b_ + " = " + functions.division(a_, b_)); // These print the full equation: "a / b = result"
+            } else if (input == 3) { // 3 selects the Multiplication function
                 System.out.println("Please enter the first number:");
                 double a_ = scanner.nextDouble();
                 System.out.println("Please enter the second number:");
                 double b_ = scanner.nextDouble();
-                System.out.println(a_ + " / " + b_ + " = " + functions.division(a_, b_));
-            } else if (input == 3) {
-                System.out.println("Please enter the first number:");
-                double a_ = scanner.nextDouble();
-                System.out.println("Please enter the second number:");
-                double b_ = scanner.nextDouble();
-                System.out.println(a_ + " * " + b_ + " = " + functions.multiplication(a_, b_));
-            } else if (input == 2) {
+                System.out.println(a_ + " * " + b_ + " = " + functions.multiplication(a_, b_)); // This prints the full equation: "a * b = result"
+            } else if (input == 2) { // 2 selects the Subtraction function
                 System.out.println("Please enter the first number: ");
                 double a_ = scanner.nextDouble();
                 System.out.println("Please enter the second number: ");
                 double b_ = scanner.nextDouble();
-                System.out.println(a_ + " - " + b_ + " = " + functions.subtraction(a_, b_));
-            } else {
+                System.out.println(a_ + " - " + b_ + " = " + functions.subtraction(a_, b_)); // This prints the full equation: "a - b = result"
+            } else { // Results to number 1 which is the Addition function
                 System.out.println("Please enter the first number:");
                 double a_ = scanner.nextDouble();
                 System.out.println("Please enter the second number: ");
                 double b_ = scanner.nextDouble();
-                System.out.println(a_ + " + " + b_ + " = " + functions.addition(a_, b_));
+                System.out.println(a_ + " + " + b_ + " = " + functions.addition(a_, b_)); // This prints the full equation: "a + b = result"
             }
             System.out.println("Would you like to make another calculation (y/n)?");
             String answer = scanner.next();
