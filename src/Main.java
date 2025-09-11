@@ -39,11 +39,23 @@ public class Main {
             System.out.println("2. Subtraction");
             System.out.println("3. Multiplication");
             System.out.println("4. Division");
+            System.out.println("5. Exponents");
+            System.out.println("6. Square Root");
             // The scanner to allow the users to select the function they want to utilize
             System.out.print("Enter a function: ");
             int input = scanner.nextInt();
 
-            if (input == 4) { // 4 selects the Division function
+            if (input == 6) {
+                System.out.println("Please enter the number:");
+                double a_ = scanner.nextDouble();
+                System.out.println(" √ " + a_ +  " = " + functions.squareRoot(a_));
+            } else if (input == 5) {
+                System.out.println("Please enter the first number:");
+                double a_ = scanner.nextDouble();
+                System.out.println("Please enter the second number:");
+                double b_ = scanner.nextDouble();
+                System.out.println(a_ + " ^ " + b_ + " = " + functions.exponent(a_, b_));
+            } else if (input == 4) {
                 System.out.println("Please enter the first number:"); // These ask for the 1st variable
                 double a_ = scanner.nextDouble();
                 System.out.println("Please enter the second number:");
