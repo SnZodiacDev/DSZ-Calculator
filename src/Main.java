@@ -39,11 +39,11 @@ public class Main {
         while (loop) { // Loop to allow users to do another function when they completed the last function
             // List of available functions that the users can utilize in the program
             System.out.println("Welcome Please state what function you would like to do.");
-            System.out.println("1. Addition");
+            System.out.print("1. Addition   ");
             System.out.println("2. Subtraction");
-            System.out.println("3. Multiplication");
+            System.out.print("3. Multiplication   ");
             System.out.println("4. Division");
-            System.out.println("5. Exponents");
+            System.out.print("5. Exponents   ");
             System.out.println("6. Square Root");
             System.out.println("7. Nth Root");
             // The scanner to allow the users to select the function they want to utilize
@@ -51,11 +51,11 @@ public class Main {
             int input = scanner.nextInt();
 
             if (input == 7) {
-                System.out.println("Please enter the first number:");
+                System.out.println("Please enter the number you want to root: ");
                 double a_ = scanner.nextDouble();
-                System.out.println("Please enter the second number:");
+                System.out.println("Please enter the number you want to root by: ");
                 double b_ = scanner.nextDouble();
-                System.out.println(a_ + " √ " + b_ + " = " + functions.nthRoot(a_, b_));
+                System.out.println(b_ + " √ " + a_ + " = " + functions.nthRoot(a_, b_));
             } else if (input == 6) {
                 System.out.println("Please enter the number:");
                 double a_ = scanner.nextDouble();
