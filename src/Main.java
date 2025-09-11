@@ -2,22 +2,23 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public double addition(double a, double b) {
+    public double addition(double a, double b) { //This is the method for adding numbers in thr calculator.
         return a + b;
     }
 
-    public double subtraction(double a, double b) {
+    public double subtraction(double a, double b) { //This is the method for subtracting numbers in thr calculator.
         return a - b;
     }
 
-    public double multiplication(double a, double b) {
+    public double multiplication(double a, double b) { //This is the method for multiplying numbers in thr calculator.
          return a * b;
     }
 
-    public double division(double a, double b) {
+    public double division(double a, double b) { //This is the method for dividing numbers in thr calculator.
          return a / b;
     }
     public static void main(String[] args) {
+        //Variables that are used in the program.
         Main functions = new Main();
         Scanner scanner = new Scanner(System.in);
         boolean loop = true;
