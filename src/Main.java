@@ -18,10 +18,12 @@ public class Main {
          return a / b;
     }
     public static void main(String[] args) {
-            Main functions = new Main();
-            Scanner scanner = new Scanner(System.in);
+        Main functions = new Main();
+        Scanner scanner = new Scanner(System.in);
+        boolean loop = true;
 
-            System.out.println("Welcome");
+        while (loop) {
+            System.out.println("Welcome Please state what function you would like to do.");
             System.out.println("1. Addition");
             System.out.println("2. Subtraction");
             System.out.println("3. Multiplication");
@@ -30,7 +32,7 @@ public class Main {
             System.out.print("Enter a function: ");
             int input = scanner.nextInt();
 
-            if(input == 4) {
+            if (input == 4) {
                 System.out.println("Please enter the first number:");
                 double a_ = scanner.nextDouble();
                 System.out.println("Please enter the second number:");
@@ -55,5 +57,11 @@ public class Main {
                 double b_ = scanner.nextDouble();
                 System.out.println(a_ + " + " + b_ + " = " + functions.addition(a_, b_));
             }
+            System.out.println("Would you like to make another calculation (y/n)?");
+            String answer = scanner.next();
+            if (answer.equals("n")) {
+                loop = false;
+            }
         }
+    }
 }
