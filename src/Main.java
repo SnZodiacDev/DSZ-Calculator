@@ -52,8 +52,6 @@ public class Main {
                 double b_ = scanner.nextDouble();
                 System.out.println(a_ + " ^ " + b_ + " = " + functions.exponent(a_, b_));
             } else if (input == 4) {
-                System.out.println("Please enter the first number:");
-            if (input == 4) { // 4 selects the Division function
                 System.out.println("Please enter the first number:"); // These ask for the 1st variable
                 double a_ = scanner.nextDouble();
                 System.out.println("Please enter the second number:"); // These ask for the 2nd variable
